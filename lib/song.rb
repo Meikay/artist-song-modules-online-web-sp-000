@@ -6,6 +6,9 @@ class Song
 
   @@songs = []
 
+  extend Memorable::reset_all
+  extend Memorable::count
+
   def initialize
     @@songs << self
   end
