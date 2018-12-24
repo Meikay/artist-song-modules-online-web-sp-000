@@ -1,5 +1,6 @@
 module Memorable
   module ClassMethods
+    module InstanceMethods
    def self.reset_all
      self.all.clear
    end
