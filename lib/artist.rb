@@ -6,8 +6,7 @@ class Artist
 
   @@artists = []
 
-  extend Memorable::reset_all
-  extend Memorable::count
+  extend Memorable::ClassMethods
 
   def initialize
     @@artists << self
