@@ -4,9 +4,9 @@ class Artist
   attr_accessor :name
   attr_reader :songs
 
-  @@artists = []
-
   extend Memorable::ClassMethods
+
+  @@artists = []
 
   def initialize
     @@artists << self
